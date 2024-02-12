@@ -1,8 +1,8 @@
 package com.przemyslawlewalski.app;
 
 public class DifficultyLevel {
-    private String name;
-    private int maxNumber;
+    private final String name;
+    private final int maxNumber;
 
     public DifficultyLevel(String name, int maxNumber) {
         this.name = name;

@@ -3,11 +3,11 @@ package com.przemyslawlewalski.app;
 import java.util.Scanner;
 
 public class Game {
-    private Player player;
-    private Player cpuPlayer;
-    private PlayerScoreManager scoreManager;
-    private int numberToGuess;
     private static final int MAX_ATTEMPTS = 10;
+    private final Player player;
+    private final Player cpuPlayer;
+    private final PlayerScoreManager scoreManager;
+    private int numberToGuess;
 
     public Game(Player player, Player cpuPlayer) {
         this.player = player;
