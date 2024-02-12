@@ -1,7 +1,10 @@
 package com.przemyslawlewalski.app;
 
 import java.io.*;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PlayerScoreManager {
     private static final String SCORES_DIRECTORY = "scores";
@@ -15,22 +18,36 @@ public class PlayerScoreManager {
         }
     }
 
-    public void saveScore(Player player, int score) {
-        try (PrintWriter out = new PrintWriter(new FileWriter(SCORES_DIRECTORY + "/" + player.getNickname() + ".txt"))) {
-            out.println(score);
+    public void savePlayer(Player player) {
+        String filename = player.getNickname() + ".ser";
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(SCORES_DIRECTORY + "/" + filename))) {
+            oos.writeObject(player);
         } catch (IOException e) {
-            System.out.println("An error occurred while saving the score.");
+            System.out.println("An error occurred while saving the player.");
             e.printStackTrace();
         }
     }
 
-    public int loadScore(Player player) {
-        try {
-            String scoreString = new String(Files.readAllBytes(Paths.get(SCORES_DIRECTORY + "/" + player.getNickname() + ".txt")));
-            return Integer.parseInt(scoreString.trim()); // trim the string before parsing
-        } catch (IOException e) {
-            System.out.println("No previous score found for this player.");
-            return 0;
+    public Player loadPlayer(String nickname) {
+        String filename = nickname + ".ser";
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(SCORES_DIRECTORY + "/" + filename))) {
+            return (Player) ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            if (!nickname.equals(App.cpuPlayerNickname)) {
+                System.out.println("No data found for this player. Creating new save file.");
+            }
+            return null;
         }
+    }
+
+    public List<Player> getAllPlayers() {
+        File directory = new File(SCORES_DIRECTORY);
+        List<Player> players = new ArrayList<>();
+        for (File file : directory.listFiles()) {
+            if (file.getName().endsWith(".ser")) {
+                players.add(loadPlayer(file.getName().replace(".ser", "")));
+            }
+        }
+        return players;
     }
 }
