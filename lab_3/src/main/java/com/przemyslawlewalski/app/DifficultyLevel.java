@@ -2,23 +2,29 @@ package com.przemyslawlewalski.app;
 
 public class DifficultyLevel {
     private final String name;
-    private final int maxNumber;
+    private final int startValue;
+    private final int endValue;
 
-    public DifficultyLevel(String name, int maxNumber) {
+    public DifficultyLevel(String name, int startValue, int endValue) {
         this.name = name;
-        this.maxNumber = maxNumber;
+        this.startValue = startValue;
+        this.endValue = endValue;
     }
 
     public String getName() {
         return name;
     }
 
-    public int getMaxNumber() {
-        return maxNumber;
+    public int getStartValue() {
+        return startValue;
+    }
+
+    public int getEndValue() {
+        return endValue;
     }
 
     @Override
     public String toString() {
-        return String.valueOf(maxNumber);
+        return String.valueOf(endValue);
     }
 }

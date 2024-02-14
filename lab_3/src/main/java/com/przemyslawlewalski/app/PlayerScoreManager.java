@@ -3,8 +3,7 @@ package com.przemyslawlewalski.app;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class PlayerScoreManager {
     private static final String SCORES_DIRECTORY = "scores";
@@ -38,16 +37,5 @@ public class PlayerScoreManager {
             }
             return null;
         }
-    }
-
-    public List<Player> getAllPlayers() {
-        File directory = new File(SCORES_DIRECTORY);
-        List<Player> players = new ArrayList<>();
-        for (File file : directory.listFiles()) {
-            if (file.getName().endsWith(".ser")) {
-                players.add(loadPlayer(file.getName().replace(".ser", "")));
-            }
-        }
-        return players;
     }
 }
