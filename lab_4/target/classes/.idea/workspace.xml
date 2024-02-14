@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f2843bc-569c-4fd8-9175-d57c8d2106fd" name="Changes" comment="Init lab 3 commit">
+      <change afterPath="$PROJECT_DIR$/../.idea/IDEA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/.idea/artifacts/GuessingGame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/Przemek.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/src/main/java/max/vanach/lesson_1/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/src/main/java/max/vanach/lesson_1/GameLauncher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/src/main/java/max/vanach/lesson_1/NormalGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/src/main/java/max/vanach/lesson_1/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/src/main/java/max/vanach/lesson_1/ReverseGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/src/main/java/max/vanach/lesson_1/ScoreManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/src/main/java/max/vanach/lesson_1/known-problems.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/classes/max/vanach/lesson_1/Game.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/classes/max/vanach/lesson_1/GameLauncher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/classes/max/vanach/lesson_1/NormalGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/classes/max/vanach/lesson_1/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/classes/max/vanach/lesson_1/ReverseGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/classes/max/vanach/lesson_1/ScoreManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/lesson_1-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../draft/testing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/AdvancedDifficulty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/ClassicGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/MixedGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/MultiplayerGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/ReverseGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_1.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/DifficultyLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/DifficultyLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/PlayerScoreManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/PlayerScoreManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/przemyslawlewalski/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/przemyslawlewalski/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/przemyslawlewalski/app/DifficultyLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/przemyslawlewalski/app/DifficultyLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/przemyslawlewalski/app/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/przemyslawlewalski/app/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/przemyslawlewalski/app/GameStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/przemyslawlewalski/app/GameStats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/przemyslawlewalski/app/PlayerScoreManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/przemyslawlewalski/app/PlayerScoreManager.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/przemyslawlewalski/app/App.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2cB8fagAeBcomfi9RyiGdoCcyYk" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Development/IDEA/lab_3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="lab_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="lab_1" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-19.0.2-corretto-19.0.2-3183f394aec4-f0552fc0" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f2843bc-569c-4fd8-9175-d57c8d2106fd" name="Changes" comment="" />
+      <created>1707573716014</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707573716014</updated>
+      <workItem from="1707573717130" duration="316000" />
+      <workItem from="1707574046950" duration="288000" />
+      <workItem from="1707574593492" duration="3467000" />
+      <workItem from="1707652117302" duration="10090000" />
+      <workItem from="1707761783889" duration="9000000" />
+      <workItem from="1707846258583" duration="43000" />
+      <workItem from="1707846307785" duration="1115000" />
+      <workItem from="1707849302065" duration="4192000" />
+      <workItem from="1707853508116" duration="5375000" />
+      <workItem from="1707943675874" duration="834000" />
+    </task>
+    <task id="LOCAL-00001" summary="Create basic structure of lab 1 app">
+      <option name="closed" value="true" />
+      <created>1707574173583</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707574173583</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Init commit for lab_2">
+      <option name="closed" value="true" />
+      <created>1707575201786</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707575201786</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implementation of all points from lab 2">
+      <option name="closed" value="true" />
+      <created>1707770671440</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707770671440</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Cleanup">
+      <option name="closed" value="true" />
+      <created>1707770772479</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707770772479</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Addendum">
+      <option name="closed" value="true" />
+      <created>1707846589480</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707846589480</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Init lab 3 commit">
+      <option name="closed" value="true" />
+      <created>1707846656843</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707846656843</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create basic structure of lab 1 app" />
+    <MESSAGE value="Init commit for lab_2" />
+    <MESSAGE value="Implementation of all points from lab 2" />
+    <MESSAGE value="Cleanup" />
+    <MESSAGE value="Addendum" />
+    <MESSAGE value="Init lab 3 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init lab 3 commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
