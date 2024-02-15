@@ -1,9 +1,9 @@
 package com.przemyslawlewalski.app.game;
 
-import com.przemyslawlewalski.app.player.Player;
 import com.przemyslawlewalski.app.difficulty.DifficultyLevel;
 import com.przemyslawlewalski.app.game.mode.GameMode;
 import com.przemyslawlewalski.app.game.stats.GameStats;
+import com.przemyslawlewalski.app.player.Player;
 
 import java.util.Scanner;
 

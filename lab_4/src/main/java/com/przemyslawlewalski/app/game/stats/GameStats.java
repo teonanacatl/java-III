@@ -5,12 +5,11 @@ import java.io.Serializable;
 public class GameStats implements Serializable {
     private int wins;
     private int loses;
-    private String record;
 
     public GameStats() {
         this.setWins(0);
         this.setLoses(0);
-        this.setRecord("");
+        this.setRecord();
     }
 
     public int getWins() {
@@ -29,7 +28,6 @@ public class GameStats implements Serializable {
         this.loses = loses;
     }
 
-    public void setRecord(String record) {
-        this.record = record;
+    public void setRecord() {
     }
 }

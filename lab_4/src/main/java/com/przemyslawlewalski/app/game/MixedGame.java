@@ -1,7 +1,7 @@
 package com.przemyslawlewalski.app.game;
 
-import com.przemyslawlewalski.app.player.Player;
 import com.przemyslawlewalski.app.difficulty.DifficultyLevel;
+import com.przemyslawlewalski.app.player.Player;
 
 import java.util.Scanner;
 
@@ -35,6 +35,7 @@ public class MixedGame extends Game {
             }
 
             while (true) {
+
                 if (playerTurn) {
                     System.out.print("Enter your guess: ");
                     int guess = scanner.nextInt();
@@ -66,6 +67,5 @@ public class MixedGame extends Game {
             }
             askPlayAgain();
         } while (playAgain.equalsIgnoreCase("yes"));
-
     }
 }

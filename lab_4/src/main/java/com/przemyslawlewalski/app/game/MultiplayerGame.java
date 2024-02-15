@@ -1,7 +1,9 @@
 package com.przemyslawlewalski.app.game;
 
-import com.przemyslawlewalski.app.player.Player;
 import com.przemyslawlewalski.app.difficulty.DifficultyLevel;
+import com.przemyslawlewalski.app.game.mode.GameMode;
+import com.przemyslawlewalski.app.game.stats.GameStats;
+import com.przemyslawlewalski.app.player.Player;
 
 import java.util.*;
 
@@ -13,6 +15,7 @@ public class MultiplayerGame extends Game {
     @Override
     public void startGame() {
         System.out.println("Welcome to the multiplayer game!");
+        Player winner = null;
         do {
             Random random = new Random();
             Player choosingPlayer = players.get(random.nextInt(players.size()));
@@ -29,10 +32,17 @@ public class MultiplayerGame extends Game {
 
             Map<Player, Integer> attempts = new HashMap<>();
             for (Player player : guessingPlayers) {
+                int maxAttempts = MAX_ATTEMPTS;
+                if (player.isChampion()) {
+                    player.grantNonTournamentPrivileges();
+                    maxAttempts += 1;
+                    System.out.println(player.getNickname() + ", as a champion, you get an extra guess! You now have " + maxAttempts + " attempts.");
+                }
                 attempts.put(player, 0);
             }
 
             boolean gameWon = false;
+            guessingPlayers.sort(Comparator.comparing(Player::isLeader).reversed());
             while (!gameWon && Collections.max(attempts.values()) < MAX_ATTEMPTS) {
                 for (Player player : guessingPlayers) {
                     if (attempts.get(player) < MAX_ATTEMPTS) {
@@ -43,7 +53,14 @@ public class MultiplayerGame extends Game {
                         if (guess == chosenNumber) {
                             System.out.println("Congratulations, " + player.getNickname() + "! You've guessed the number! You won the game!");
                             gameWon = true;
-                            askPlayAgain();
+                            winner = player;
+                            int nextPlayerIndex = (guessingPlayers.indexOf(player) + 1) % guessingPlayers.size();
+                            Player nextPlayer = guessingPlayers.get(nextPlayerIndex);
+                            System.out.println("As the winner of this round, " + player.getNickname() + " will choose the number in the next round!");
+                            System.out.println("As the next player in line, " + nextPlayer.getNickname() + " will be the first to guess in the next round!");
+                            player.setLeader(false);
+                            nextPlayer.setLeader(true);
+
                             break;
                         } else if (guess < chosenNumber) {
                             System.out.println("Too low!");
@@ -55,9 +72,30 @@ public class MultiplayerGame extends Game {
             }
             if (!gameWon) {
                 System.out.println("No one guessed the number. The player who chose the number, " + choosingPlayer.getNickname() + ", wins!");
+                winner = choosingPlayer;
             }
-            askPlayAgain();
+            endGame();
         } while (playAgain.equalsIgnoreCase("yes"));
+
+        GameMode gameMode = winner.getSingle().get("Multiplayer game");
+        GameStats gameStats = gameMode.getDifficulty().get(difficulty.getName());
+        if (gameStats == null) {
+            gameStats = new GameStats();
+            gameMode.getDifficulty().put(difficulty.getName(), gameStats);
+        }
+        gameStats.setWins(gameStats.getWins() + 1);
+        scoreManager.savePlayer(winner);
+
+    }
+
+    @Override
+    public void endGame() {
+        askPlayAgain();
     }
 }
+
+
+
+
+
 
